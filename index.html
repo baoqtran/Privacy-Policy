@@ -1,49 +1,228 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Previous head content remains the same -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the Word with Tulip - Fun Word Game</title>
+    <style>
+        :root {
+            --primary-color: #FF9494; /* Soft pink - matching app theme */
+            --secondary-color: #FFE3E1;
+            --accent-color: #FFD1D1;
+            --text-color: #2c3e50;
+            --light-bg: #FFF5E4;
+        }
+
+        body {
+            font-family: 'SF Pro Display', 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: var(--light-bg);
+            color: var(--text-color);
+        }
+        
+        .hero {
+            background-color: var(--primary-color);
+            padding: 60px 20px;
+            text-align: center;
+            color: white;
+            margin-bottom: 40px;
+        }
+
+        .hero h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .hero p {
+            font-size: 1.2em;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .app-preview {
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        .app-preview img {
+            max-width: 300px;
+            border-radius: 20px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        
+        .app-links {
+            text-align: center;
+            margin: 30px 0;
+        }
+        
+        .app-store-button {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: white;
+            padding: 15px 30px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        .app-store-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 8px rgba(0,0,0,0.2);
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+
+        .feature-card {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            transition: transform 0.3s;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .feature-card h3 {
+            color: var(--primary-color);
+            margin-top: 0;
+        }
+
+        .updates-section {
+            background-color: var(--secondary-color);
+            padding: 40px 0;
+            margin: 40px 0;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 40px 0;
+            background-color: var(--accent-color);
+            color: var(--text-color);
+        }
+
+        .footer a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2em;
+            }
+            
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
 </head>
 <body>
-    <div class="container">
+    <div class="hero">
         <h1>Guess the Word with Tulip</h1>
-        
+        <p>Join Tulip in a delightful word-guessing adventure! Perfect for all ages, combining fun with learning.</p>
+    </div>
+
+    <div class="container">
+        <div class="app-preview">
+            <!-- Add your app screenshots here -->
+            <img src="app-preview.png" alt="Guess the Word with Tulip Screenshot">
+        </div>
+
         <div class="app-links">
-            <a href="https://apps.apple.com/us/app/guess-the-word-with-tulip/id6740008954">Download on App Store</a>
-            <a href="privacy-policy.html">Privacy Policy</a>
-            <a href="app-ads.txt">Advertising</a>
+            <a href="https://apps.apple.com/us/app/guess-the-word-with-tulip/id6740008954" class="app-store-button">
+                Download on App Store
+            </a>
         </div>
 
-        <!-- Rest of the content remains the same but let's update the version info -->
-        <h2>Latest Update - Version 2.1.1</h2>
-        <div class="features">
-            <ul>
-                <li>New difficulty system</li>
-                <li>Achievement system with 15+ achievements</li>
-                <li>Enhanced word selection</li>
-                <li>Improved UI/UX</li>
-                <li>Added celebration sounds</li>
-                <li>Bug fixes and performance improvements</li>
-            </ul>
+        <div class="features-grid">
+            <div class="feature-card">
+                <h3>Multiple Difficulty Levels</h3>
+                <p>Choose from Beginner, Intermediate, and Advanced levels to match your skill.</p>
+            </div>
+
+            <div class="feature-card">
+                <h3>Achievement System</h3>
+                <p>Earn over 15 unique achievements as you play and improve your skills.</p>
+            </div>
+
+            <div class="feature-card">
+                <h3>Free Play Mode</h3>
+                <p>Practice unlimited words at your own pace without any pressure.</p>
+            </div>
+
+            <div class="feature-card">
+                <h3>Daily Challenges</h3>
+                <p>New challenges every day to keep you engaged and learning.</p>
+            </div>
+
+            <div class="feature-card">
+                <h3>Progress Tracking</h3>
+                <p>Monitor your improvement with detailed statistics and progress indicators.</p>
+            </div>
+
+            <div class="feature-card">
+                <h3>Family Friendly</h3>
+                <p>Safe and educational content suitable for all ages.</p>
+            </div>
         </div>
 
-        <h2>System Requirements</h2>
-        <div class="features">
-            <ul>
-                <li>iOS/iPadOS 18.0 or later</li>
-                <li>macOS 15.0 or later (Apple M1 chip or later)</li>
-                <li>Size: 5.3 MB</li>
-                <li>Language: English</li>
-                <li>Age Rating: 4+</li>
-            </ul>
-        </div>
-
-        <h2>Support</h2>
-        <p>Having issues or questions? Contact our support team at [Your Support Email]</p>
-
-        <div class="footer">
-            <p>© 2025 Guess the Word with Tulip. All rights reserved.</p>
-            <p>Developed with ❤️ for word game enthusiasts</p>
+        <div class="updates-section">
+            <div class="container">
+                <h2>Latest Update - Version 2.1.1</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <h3>What's New</h3>
+                        <ul>
+                            <li>New achievement system</li>
+                            <li>Enhanced word selection</li>
+                            <li>Improved UI/UX</li>
+                            <li>Added celebration sounds</li>
+                            <li>Bug fixes and improvements</li>
+                        </ul>
+                    </div>
+                    <div class="feature-card">
+                        <h3>System Requirements</h3>
+                        <ul>
+                            <li>iOS/iPadOS 18.0 or later</li>
+                            <li>macOS 15.0 or later</li>
+                            <li>Size: 5.3 MB</li>
+                            <li>Language: English</li>
+                            <li>Age Rating: 4+</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+
+    <footer class="footer">
+        <div class="container">
+            <p><a href="privacy-policy.html">Privacy Policy</a> | <a href="app-ads.txt">Advertising</a></p>
+            <p>© 2025 Guess the Word with Tulip. All rights reserved.</p>
+            <p>Developed with love for word game enthusiasts</p>
+        </div>
+    </footer>
 </body>
 </html>
