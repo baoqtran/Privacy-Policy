@@ -6,7 +6,7 @@
     <title>Guess the Word with Tulip - Fun Word Game</title>
     <style>
         :root {
-            --primary-color: #FF9494; /* Soft pink - matching app theme */
+            --primary-color: #FF9494;
             --secondary-color: #FFE3E1;
             --accent-color: #FFD1D1;
             --text-color: #2c3e50;
@@ -46,17 +46,6 @@
             max-width: 1000px;
             margin: 0 auto;
             padding: 0 20px;
-        }
-        
-        .app-preview {
-            text-align: center;
-            margin: 40px 0;
-        }
-
-        .app-preview img {
-            max-width: 300px;
-            border-radius: 20px;
-            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
         }
         
         .app-links {
@@ -119,11 +108,13 @@
         }
 
         .footer a {
-            color: var(--primary-color);
+            color: var(--text-color);
             text-decoration: none;
+            transition: color 0.3s;
         }
 
         .footer a:hover {
+            color: var(--primary-color);
             text-decoration: underline;
         }
 
@@ -145,11 +136,6 @@
     </div>
 
     <div class="container">
-        <div class="app-preview">
-            <!-- Add your app screenshots here -->
-            <img src="app-preview.png" alt="Guess the Word with Tulip Screenshot">
-        </div>
-
         <div class="app-links">
             <a href="https://apps.apple.com/us/app/guess-the-word-with-tulip/id6740008954" class="app-store-button">
                 Download on App Store
@@ -219,8 +205,12 @@
 
     <footer class="footer">
         <div class="container">
-            <p><a href="privacy-policy.html">Privacy Policy</a> | <a href="app-ads.txt">Advertising</a></p>
+            <p>
+                <a href="https://github.com/baoqtran/Privacy-Policy/blob/main/README.md">Privacy Policy</a> | 
+                <a href="app-ads.txt">Advertising</a>
+            </p>
             <p>© 2025 Guess the Word with Tulip. All rights reserved.</p>
+            <p>Contact: taburo9987@yahoo.com</p>
             <p>Developed with love for word game enthusiasts</p>
         </div>
     </footer>
